@@ -21,11 +21,13 @@ func (s *server) GetUserProfile(ctx context.Context, req *pb.UserRequest) (*pb.U
 		return &pb.UserResponse{
 			Name:  "Budi Santoso",
 			Email: "budi@universitas.ac.id",
+			Phone: "+62-812-3456-7890",
 		}, nil
 	}
 	return &pb.UserResponse{
 		Name:  "User Tidak Ditemukan",
 		Email: "-",
+		Phone: "-",
 	}, nil
 }
 
